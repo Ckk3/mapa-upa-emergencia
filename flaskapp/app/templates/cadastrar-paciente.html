@@ -1,0 +1,53 @@
+{% extends 'base.html' %} {% block title %}Adicionar Paciente- {% endblock
+    %} {% block content %}
+<style>
+    input { 
+        width: 200px;
+        height: 40px;
+        background: #D9D9D9;
+        border: none;
+        padding: 10px; 
+    }
+</style>
+<div class="container">
+    <section>
+        Pacientes | Adicionar paciente
+    </section>
+
+    <section>
+        <form method="POST" action"/cadastrar-paciente">
+            <div id="dados-pessoais">
+                {{ form.nome_completo(placeholder="Nome Completo") }}
+                {{ form.data_nascimento(placeholder="Data Nascimento") }}
+                {{ form.sexo }}
+            </div>
+            <div style="margin-top: 10px;">
+                {{ form.endereco(placeholder="Endereço") }}
+                {{ form.cidade(placeholder="Cidade") }}
+                {{ form.estado(placeholder="Estado") }}
+                {{ form.cep(placeholder="CEP") }}
+            </div>
+            <div style="margin-top: 10px;">
+                {{ form.cns(placeholder="CNS") }}
+                {{ form.cpf(placeholder="CPF") }}
+            <div style="margin-top: 10px;">
+                {{ form.alergias(placeholder="Alergias") }}
+            </div>
+            <div style="margin-top: 10px;">
+                {{ form.comorbidades(placeholder="Comorbidades") }}
+            </div>
+            <div id="historia-clinica" style="margin-top: 10px;">
+                {{ form.historia_clinica(placeholder="História Clínica") }}
+                <br />
+                {{ form.dados_clinicos(placeholder="Dados Clínicos") }}
+            </div>
+            <div id="cid">
+                {{ form.cid(placeholder="CID - SUSPEITA INICIAL") }}
+            </div>
+        </form>
+    </section>
+    
+</div>
+{% endblock %} {% block scripts %}
+    <script src="/static/js/main.js"></script>
+{% endblock %}

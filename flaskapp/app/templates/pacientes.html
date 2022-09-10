@@ -1,8 +1,24 @@
-{% extends 'base.html' %} {% block title %}Login - {% endblock
+{% extends 'base.html' %} {% block title %}Pacientes Internados - {% endblock
 %} {% block content %}
 <div class="container">
   <section>
     Pacientes | tabela com pacientes
+  </section>
+  <section style="margin-top: 20px; margin-bottom: 20px;">
+    <button style="background-color: #325AA4; color: white; height: 40px; width: 168px; border: none">+ Admitir paciente</button>
+  </section>
+  <section style="margin-top: 20px; margin-bottom: 20px;">
+    <h1>Pacientes Internados</h1>
+    <div class="pacientes-internados" id="pacientes-internados-div" style="margin-top: 20px;">
+      <div class="paciente" style="display: flex; background-color: #D9D9D9;">
+        <p style="padding-left: 18px;">João Paulo Santos Rodrigues, masculino, 21 anos</p>
+        <div class="paciente-button" style="align-self: center; margin: 0 auto;">
+          <button style="border: none; background-color: #A6A6A6; width: 110px; height: 29px; margin-left: 10px;">Visualizar</button>
+          <button style="border: none; background-color: #A6A6A6; width: 110px; height: 29px; margin-left: 10px;">Evoluir</button>
+          <button style="border: none; background-color: #A6A6A6; width: 110px; height: 29px; margin-left: 10px;">Imprimir</button>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 {% endblock %} {% block scripts %}
