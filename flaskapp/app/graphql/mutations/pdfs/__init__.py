@@ -20,3 +20,5 @@ WRITE_LME_DIRECTORY = "./graphql/mutations/pdfs/tests/pdfs_created_files_test/lm
 WRITE_PRESCRICAO_MEDICA_DIRECTORY = "./graphql/mutations/pdfs/tests/pdfs_created_files_test/prescricao_medica_teste.pdf"
 WRITE_RELATORIO_ALTA_DIRECTORY = "./graphql/mutations/pdfs/tests/pdfs_created_files_test/relatorio_alta_teste.pdf"
 WRITE_SOLICIT_MAMOGRAFIA_DIRECTORY = "./graphql/mutations/pdfs/tests/pdfs_created_files_test/solicit_mamografia_teste.pdf"
+
+import app.graphql.mutations.pdfs.pdf_aih_sus
