@@ -17,3 +17,5 @@ pysqlite3==0.4.7
 pyjwt==2.5.0
 bcrypt==4.0.1
 validate-docbr==1.10.0
+PyPDF2==2.11.1
+reportlab==3.6.11
